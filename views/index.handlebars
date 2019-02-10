@@ -1,101 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Blabble</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
-</head>
-<body>
+<html>
 
-<style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="/css/blabble.css">
 
-.newEntryButton {
-    background-color: #e7e7e7; /* Grey */
-    border: none;
-    color: black;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 12px;
-    font-size: 2vw;
-  width: 65%;
-height: 50%;
- }
-  .newEntryButton:link {
-    background-color: grey;
-    text-decoration: none;
-    color: black;
-
-  }
-  .newEntryButton:hover {
-    background-color: grey;
-    text-decoration: none;
-    color: black;
-
-  }
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 
 
+<!-- light grey bg for large screens -->
+<body class="w3-light-grey">
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content,-->
+<div class="container">
+<div class="w3-content  w3-white w3" style="max-width:800px; height:500px;">
 
-.galleryButton {
-  background-color: #e7e7e7; /* Grey */
-  border: none;
-    color: black;
-  display: inline-block;
-  text-decoration: none;
-  width: 25%;   
-  font-size: 1.2vw;
-    border-radius: 20%;
-  }
 
-  .galleryButton:link {
-    background-color: grey;
-    text-decoration: none;
-    color: black;
-
-  }
-  .galleryButton:hover {
-    background-color: grey;
-    text-decoration: none;
-    color: black;
-  }
-
-  .screenContainer {
-  margin-left:25%;
-    height: 40%;
-    width: 25%;
-    text-align: center;
-  align-content: center; 
-  }
-
-</style>
-
-<div class="screenContainer">
- <div class="col-md-12">&nbsp;</div>
- <div class="col-md-12">&nbsp;
-    <a href="Entry Page.html" class="newEntryButton" role="button">NEW ENTRY<br/>+
+<div class="w3-card-4 w3-white w3-margin">
+    <div class="w3-cell-row" style="height:500px;">
+  <div class=" w3-cell-middle w3-center" style="height:40%; margin-top:100px;"> 
+      <a href="Entry Page.html" class="newEntryButton" role="button">NEW ENTRY<br/>+
     </a>
- </div>
-
-<div class="col-md-12">&nbsp;</div>
-
-<div class="col-md-12">&nbsp;
-  <a href="GalleryPage.html" class="galleryButton" role="button"><br/>
-  Gallery
+      </div>
+       <div class="w3-white w3-center" style="height:20%; margin-top:10%; "> 
+    <a href="GalleryPage.html" class="botButton" role="button"><br/>
+    Gallery
     </a>
 
-    <a href="CalendarPage.html" class="galleryButton" role="button"><br/>Calendar
+    <a href="CalendarPage.html" class="botButton" role="button"><br/>Calendar
     </a>
   
-    <a href="TagsPage.html" class="galleryButton" role="button"><br/>Tags
+    <a href="TagsPage.html" class="botButton" role="button"><br/>Tags
     </a>
   </div>
-  
+      </div>
+  </div>
+
+
+<!-- FORM -->
+<div class="w3-card-4 w3-margin w3-white"> </div><!-- END FORM -->
+
+<!-- TAG AND SAVE -->
+</div><!-- END CONTENT-->
 </div>
 
+
+<script>
+	$(".play").click(function() {
+		$(".stem").addClass("rain");
+
+		setTimeout(function () {
+			$('.stem').removeClass('rain');
+		}, 1200);
+	});
+</script>
+<!--END PLANT ANIMATION-->
+
+<script type="text/javascript">
+
+
+
+var text = document.getElementById("exampleFormControlTextarea2").value;
+text = text.replace(/\n/g, "\r\n"); // To retain the Line breaks.
+var blob = new Blob([text], { type: "text/plain"});
+var anchor = document.createElement("a");
+anchor.download = "entries.txt";
+anchor.href = window.URL.createObjectURL(blob);
+anchor.target ="_blank";
+anchor.style.display = "none"; // just to be safe!
+document.body.appendChild(anchor);
+anchor.click();
+document.body.removeChild(anchor);
+}
+
+  // When the user clicks on <div>, open the popup
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+
+
+// When the user clicks on <div>, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+
+</script>
+
+
+<!-- END BODY -->
 </body>
+
+
 </html>
